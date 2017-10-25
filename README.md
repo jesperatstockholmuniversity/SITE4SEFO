@@ -13,3 +13,18 @@ for case creation and correction - in game like environment.
 
 [1] http://www.d-fet.eu 
 
+---------------------------------------------------------------------------------------
+SITE4SEFO on Github
+<package name> (<type of host>)
+
+casedist-server (virtual server on LAN)
+
+dfetweb-server (Internet facing web server)
+  - Web portal where students solves assignments, find material, operate virtual workstations and more
+  
+dfetweb-api (hypervisor) 
+  - Hypervisor REST API for receiving VM operations commands from dfetweb-server
+  
+guacamole-server 
+  - Configurations for a Guacamole server that should interface the students to the virtual workstations via the browser. Operates via dfetweb-server 
+
